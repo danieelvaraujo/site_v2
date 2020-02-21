@@ -1,0 +1,79 @@
+.Heroi {
+  text-align: left;
+  left: 0;
+  width: 100vw;
+  height: 35vh;
+  background-color: black;
+  padding: 0.3em;
+  margin-top: 10vh;
+
+  opacity: 1;
+
+  .Titulo {
+    margin-top: 0.5em;
+    margin-left: 1em;
+    color: #ccc;
+    font-size: 5em;
+    font-family: "Staatliches", cursive;
+  }
+
+  .Subtitulo {
+    color: white;
+    font-family: "Girassol", cursive;
+    font-size: 2.5em;
+  }
+
+  .TituloPisca {
+    font-family: "Girassol", cursive;
+    border-right: solid 5px rgba(255, 255, 255, 0.75);
+    margin-top: 0.4em;
+    margin-left: 3.5em;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 28px;
+    color: rgba(255, 255, 255, 0.7);
+    animation: animated-text 20s ease-out 2s infinite normal both,
+      animated-cursor 600ms linear infinite;
+  }
+}
+
+@keyframes animated-text {
+  0% {
+    width: 0;
+  }
+  10% {
+    width: 310px;
+  }
+
+  95% {
+    width: 310px;
+  }
+
+  100% {
+    width: 310px;
+    display: none;
+  }
+}
+
+@keyframes animated-cursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+@media (max-width: 568px) {
+  .Heroi {
+    .Titulo {
+      margin-left: 0.2em;
+    }
+    .TituloPisca {
+      margin-left: 1em;
+    }
+    .Subtitulo {
+      margin-left: 1em;
+    }
+  }
+}

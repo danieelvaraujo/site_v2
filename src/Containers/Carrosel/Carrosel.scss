@@ -1,0 +1,104 @@
+.Slider {
+  text-align: center;
+  position: relative;
+}
+
+.Seta {
+  position: absolute;
+  background-color: transparent;
+  color: #cecfcc;
+  border: none;
+  outline: none;
+  width: 45px;
+  height: 100%;
+  text-align: center;
+  font-size: 2em;
+  cursor: pointer;
+  z-index: 1000;
+  top: 50%;
+  transform: translate(0, -50%);
+  transition: all 500ms;
+  span {
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+  }
+  &-esquerda {
+    left: 0;
+  }
+
+  &-direita {
+    right: 0;
+  }
+  &:hover {
+    color: #a39e12;
+    outline: none;
+    opacity: 1;
+    background-color: rgba(195, 196, 199, 0.2);
+  }
+}
+
+.Coluna {
+  height: 700px;
+  position: relative;
+}
+
+.SlideCartao {
+  position: relative;
+  max-width: 700px;
+  max-height: 500px;
+  margin: 0 auto;
+  top: 0;
+  left: 0;
+  opacity: 1;
+
+  &:after {
+    content: "";
+    display: block;
+    width: 700px;
+    height: 500px;
+    outline: 2px solid #e2f288;
+    margin: 0 auto;
+  }
+}
+
+.AbracoSlider {
+  display: flex;
+  position: absolute;
+}
+
+.SlideAtivo-0 {
+  .Cartao {
+    opacity: 1;
+  }
+  .Detalhes {
+    transition: opacity 300ms;
+    opacity: 1;
+  }
+  #Carta1 {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    .Detalhes {
+      display: none;
+    }
+  }
+}
+
+.SlideAtivo-1 {
+  .Cartao {
+    opacity: 1;
+  }
+  .Detalhes {
+    opacity: 1;
+  }
+  #Carta0 {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    .Detalhes {
+      display: none;
+    }
+  }
+}

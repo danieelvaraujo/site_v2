@@ -1,0 +1,80 @@
+.NavBar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: #2d3436;
+  z-index: 1;
+  font-size: 1.1rem;
+}
+
+.Container {
+  max-width: 120rem;
+  display: flex;
+  margin: auto;
+  padding: 0 2rem;
+  justify-content: space-between;
+  height: 3.8rem;
+}
+
+.NavLinks {
+  justify-self: end;
+  list-style-type: none;
+  margin: auto 0;
+
+  & a {
+    color: #dfe6e9;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-bottom: 1px solid transparent;
+    margin: 0 1.5rem;
+    transition: all 300ms linear 0s;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover {
+      color: #fdcb6e;
+    }
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+}
+
+.Abraco {
+  margin: auto 0;
+
+  @media (min-width: 769px) {
+    display: none;
+  }
+}
+
+/* Border from Y to X  */
+div.borderYtoX a:before,
+div.borderYtoX a:after {
+  position: absolute;
+  opacity: 0.5;
+  height: 100%;
+  width: 2px;
+  content: "";
+  background: #fff;
+  transition: all 0.3s;
+}
+
+div.borderYtoX a:before {
+  left: 0px;
+  top: 0px;
+}
+
+div.borderYtoX a:after {
+  right: 0px;
+  bottom: 0px;
+}
+
+div.borderYtoX a:hover:before,
+div.borderYtoX a:hover:after {
+  opacity: 1;
+  height: 2px;
+  width: 100%;
+}
