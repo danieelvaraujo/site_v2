@@ -5,7 +5,6 @@ import NavBar from "./Containers/NavBar/NavBar";
 import Footer from "./Componentes/Footer/Footer";
 import Inicio from "./Paginas/Inicio/Inicio";
 import Projetos from "./Paginas/Projetos/Projetos";
-import config from "./Paginas/Contato/config";
 import Contato from "./Paginas/Contato/Contato";
 
 import "./App.scss";

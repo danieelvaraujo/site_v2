@@ -41,14 +41,14 @@
 }
 
 .Coluna {
-  height: 70vh;
+  height: 100vh;
   position: relative;
 }
 
 .SlideCartao {
   position: relative;
-  max-width: 80vw;
-  max-height: 50vh;
+  max-width: 70vw;
+  max-height: 70vh;
   margin: 0 auto;
   top: 0;
   left: 0;
@@ -57,8 +57,8 @@
   &:after {
     content: "";
     display: block;
-    width: 80vw;
-    height: 50vh;
+    width: 70vw;
+    height: 70vh;
     outline: 2px solid #e2f288;
     margin: 0 auto;
   }
@@ -105,15 +105,14 @@
 }
 
 @media (max-width: 568px) {
-  .Slider {
-    width: 80vw;
-  }
-
   .Coluna {
-    width: 80vw;
+    height: 80vh;
   }
-
-  .AbracoSlider {
-    width: 80vw;
+  .SlideCartao {
+    width: 70vw;
+    height: 50vh;
+    &:after {
+      height: 50vh;
+    }
   }
 }

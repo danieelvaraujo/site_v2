@@ -1,6 +1,6 @@
 .Cartao img {
-  width: 80vw;
-  height: 50vh;
+  width: 70vw;
+  height: 70vh;
   top: 0;
   left: 0;
 }
@@ -103,9 +103,30 @@
 }
 
 @media (max-width: 568px) {
+  .Cartao img {
+    width: 70vw;
+    height: 50vh;
+  }
+
   .Detalhes {
-    width: 80vw;
-    height: 20vh;
+    margin-left: -0.2em;
+    border-bottom: 2px solid #e2f288;
+    width: 70vw;
+    height: 25vh;
+
+    button {
+      margin-left: -0.2em;
+
+      p {
+        display: none;
+      }
+
+      i {
+        display: block;
+        color: white;
+        font-size: 2em;
+      }
+    }
   }
   .Titulo {
     font-size: 1em;

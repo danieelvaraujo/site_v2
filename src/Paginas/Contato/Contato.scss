@@ -16,7 +16,7 @@
 
 form {
   position: relative;
-  width: 50vw;
+  width: 60vw;
   margin: 2em auto 3em auto;
 }
 
@@ -61,7 +61,7 @@ textarea {
 
 textarea:hover {
   background: #b3aca7;
-  color: #e2dedb;
+  color: black;
 }
 
 .Sucesso {
@@ -86,12 +86,12 @@ textarea:hover {
 }
 
 #submit:hover {
-  color: #e2dedb;
+  color: black;
 }
 
 input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
-  color: #aca49c;
+  color: #cbc6c1;
   font-size: 0.875em;
 }
 
@@ -102,87 +102,90 @@ textarea:focus::-webkit-input-placeholder {
 
 input::-moz-placeholder,
 textarea::-moz-placeholder {
-  color: #aca49c;
+  color: #cbc6c1;
   font-size: 0.875em;
 }
 
 input:focus::-moz-placeholder,
 textarea:focus::-moz-placeholder {
-  color: #bbb5af;
+  color: #cbc6c1;
 }
 
 input::placeholder,
 textarea::placeholder {
-  color: #aca49c;
+  color: #cbc6c1;
   font-size: 0.875em;
-}
-
-input:focus::placeholder,
-textarea::focus:placeholder {
-  color: #bbb5af;
 }
 
 input::-ms-placeholder,
 textarea::-ms-placeholder {
-  color: #aca49c;
+  color: #cbc6c1;
   font-size: 0.875em;
 }
 
 input:focus::-ms-placeholder,
 textarea:focus::-ms-placeholder {
-  color: #bbb5af;
+  color: black;
 }
 
 /* on hover placeholder */
 
 input:hover::-webkit-input-placeholder,
 textarea:hover::-webkit-input-placeholder {
-  color: #e2dedb;
+  color: black;
   font-size: 0.875em;
 }
 
 input:hover:focus::-webkit-input-placeholder,
 textarea:hover:focus::-webkit-input-placeholder {
-  color: #cbc6c1;
+  color: black;
 }
 
 input:hover::-moz-placeholder,
 textarea:hover::-moz-placeholder {
-  color: #e2dedb;
+  color: black;
   font-size: 0.875em;
 }
 
 input:hover:focus::-moz-placeholder,
 textarea:hover:focus::-moz-placeholder {
-  color: #cbc6c1;
+  color: black;
 }
 
 input:hover::placeholder,
 textarea:hover::placeholder {
-  color: #e2dedb;
+  color: black;
   font-size: 0.875em;
+}
+
+input:focus::placeholder,
+textarea::focus::placeholder {
+  color: black;
 }
 
 input:hover:focus::placeholder,
 textarea:hover:focus::placeholder {
-  color: #cbc6c1;
+  color: black;
 }
 
 input:hover::placeholder,
 textarea:hover::placeholder {
-  color: #e2dedb;
+  color: black;
   font-size: 0.875em;
 }
 
 input:hover:focus::-ms-placeholder,
 textarea:hover::focus:-ms-placeholder {
-  color: #cbc6c1;
+  color: black;
 }
 
-@media only screen and (max-width: 600px) {
-  #form {
-    width: 80%;
-    padding-left: 1em;
-    padding-right: 1em;
+@media (max-width: 568px) {
+  .ContainerContato {
+    h3 {
+      margin-left: 0.5em;
+    }
+    form {
+      width: 90vw;
+    }
   }
 }
