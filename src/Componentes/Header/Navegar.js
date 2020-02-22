@@ -22,7 +22,7 @@ const Navegar = props => {
   return (
     <>
       <div className="NavBar" style={barAnimation}>
-        <div className="Container">
+        <div className="ContainerNavegar">
           <div className="NavLinks" style={linkAnimation}>
             <a href="/" exact>
               Inicio

@@ -1,7 +1,12 @@
 .Rodape {
-  background-color: rgba(188, 207, 188, 0.2);
+  background-color: rgb(72, 73, 77);
   width: 100%;
   border-top: 2px solid black;
   padding: 15px;
   text-align: center;
+  p {
+    font-family: "Tomorrow", sans-serif;
+    font-size: 0.8em;
+    color: white;
+  }
 }

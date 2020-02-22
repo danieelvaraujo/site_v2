@@ -11,7 +11,7 @@ const data = {
       foto: tvadvg,
       alter: "A imagem não carregou corretamente",
       linkLive: "about:blank",
-      linkGit: "https://google.com"
+      linkGit: "https://github.com/danieelvaraujo/teresinha_advogada"
     },
     {
       _id: "rctmybrgr",
@@ -21,7 +21,7 @@ const data = {
       foto: reactburger,
       alter: "A imagem não carregou corretamente",
       linkLive: "about:blank",
-      linkGit: "https://google.com"
+      linkGit: "https://github.com/danieelvaraujo/burger-builder"
     }
   ]
 };

@@ -20,12 +20,6 @@ const Cartao = ({ informacao }) => {
         <p className="Titulo">{titulo}</p>
         <p className="Subtitulo">{subTitulo}</p>
         <div className="Links">
-          <a href={linkLive} className="LinkLive">
-            <button>
-              <p>Live</p>
-              <i className="fa fa-angle-double-right" />
-            </button>
-          </a>
           <a href={linkGit} className="LinkGit">
             <button>
               <p>Github</p>

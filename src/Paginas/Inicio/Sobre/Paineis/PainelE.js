@@ -1,6 +1,6 @@
 import React from "react";
 
-import avatar from "../../../../Espolios/avatar.jpg";
+import avatar from "../../../../Espolios/avatar-resize.jpg";
 import "./Paineis.scss";
 
 function PainelE(props) {
@@ -8,7 +8,7 @@ function PainelE(props) {
     <div className="LdEsqrd">
       {/*Painel da Esquerda*/}
       <div className="DvEsqrd">
-        <img src="https://i.picsum.photos/id/62/200/300.jpg" alt="avatar" />
+        <img src={avatar} alt="avatar" />
       </div>
       <h3>Daniel Valente Araújo</h3>
 
@@ -37,25 +37,23 @@ function PainelE(props) {
         {/*Redes sociais*/}
         <a
           href="https://www.linkedin.com/in/daniel-valente-0221471a0/"
-          rel="noopener noreferrer"
           target="_blank"
+          className="Github"
+          rel="noopener noreferrer"
         >
-          <i
-            style={{ fontSize: "2em" }}
-            className="fa fa-linkedin "
-            aria-hidden="true"
-          />
+          <button>
+            <i className="fa fa-github-square" />
+          </button>
         </a>
         <a
           href="https://github.com/danieelvaraujo"
-          rel="noopener noreferrer"
           target="_blank"
+          className="Linkedin"
+          rel="noopener noreferrer"
         >
-          <i
-            style={{ fontSize: "2em", color: "black" }}
-            className="fa fa-github-square"
-            aria-hidden="true"
-          />
+          <button>
+            <i className="fa fa-linkedin" />
+          </button>
         </a>
       </div>
     </div>

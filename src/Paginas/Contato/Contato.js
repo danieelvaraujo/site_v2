@@ -97,7 +97,12 @@ class Contato extends Component {
             onChange={this.handleChange}
           ></textarea>
 
-          <input type="submit" value="Enviar!" disabled={this.state.disabled}>
+          <input
+            id="submit"
+            type="submit"
+            value="Enviar!"
+            disabled={this.state.disabled}
+          >
             {console.log(this.handleSubmit)}
           </input>
 
