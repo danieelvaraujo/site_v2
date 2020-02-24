@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router } from "react-router-dom";
+import { HashRouter as Router, Route } from "react-router-dom";
 
 import NavBar from "./Containers/NavBar/NavBar";
 import Footer from "./Componentes/Footer/Footer";
@@ -16,14 +16,12 @@ class App extends Component {
         <div className="AppContainer">
           <NavBar />
 
-          <Inicio
-            titulo="Daniel Valente"
-            tituloPisca="Desenvolvedor front-end"
-          />
+          <Route path="/" exact render={() => <Inicio />} />
 
-          <Projetos />
+          <Route path="/projetos" render={() => <Projetos />} />
 
-          <Contato />
+          <Route path="/contato" render={() => <Contato />} />
+
           <Footer />
         </div>
       </Router>

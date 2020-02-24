@@ -4,15 +4,7 @@ import PropTypes from "prop-types";
 import "./Cartao.scss";
 
 const Cartao = ({ informacao }) => {
-  const {
-    index,
-    titulo,
-    subTitulo,
-    alter,
-    foto,
-    linkLive,
-    linkGit
-  } = informacao;
+  const { index, titulo, subTitulo, alter, foto, linkGit } = informacao;
   return (
     <div id={`Carta${index}`} className="Cartao">
       <img src={foto} alt={alter} />

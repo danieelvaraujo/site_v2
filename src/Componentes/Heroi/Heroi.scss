@@ -8,13 +8,14 @@
   margin-top: 1em;
   opacity: 1;
   background: url("../../Espolios//hdwall.jpg");
-
+  background-size: cover;
+  background-attachment: fixed;
   background-size: cover;
 
   .Titulo {
     margin-top: 0.5em;
     margin-left: 1em;
-    color: #ccc;
+    color: rgb(255, 255, 255);
     font-size: 5em;
     font-family: "Staatliches", cursive;
   }
@@ -33,7 +34,7 @@
     white-space: nowrap;
     overflow: hidden;
     font-size: 28px;
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 1);
     animation: animated-text 20s ease-out 2s infinite normal both,
       animated-cursor 600ms linear infinite;
   }

@@ -35,18 +35,15 @@
 
 @media (max-width: 568px) {
   .PainelE {
+    padding-left: 0;
     display: block;
     width: 100vw;
-  }
-
-  .PainelE {
-    padding-left: 0;
   }
 
   .PainelD {
     display: block;
-    width: 100vw;
+    width: 90vw;
     border-top: 1px solid rgb(238, 240, 125);
-    padding-left: 0;
+    padding: 1em 0 1em 0;
   }
 }

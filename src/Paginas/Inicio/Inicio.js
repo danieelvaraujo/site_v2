@@ -9,7 +9,7 @@ function HomePage(props) {
   return (
     <div>
       <div className="BgHeroi">
-        <Heroi titulo={props.titulo} tituloPisca={props.tituloPisca} />
+        <Heroi titulo="Daniel Valente" tituloPisca="Desenvolvedor front-end" />
       </div>
       <Sobre />
     </div>

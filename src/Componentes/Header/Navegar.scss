@@ -1,14 +1,14 @@
 .NavBar {
   position: sticky;
   margin: auto;
-  width: 50vw;
+  width: 100vw;
   font-size: 1.1rem;
 }
 
 .ContainerNavegar {
   display: flex;
   justify-content: center;
-  max-width: 90vw;
+  max-width: 100vw;
   padding: 0 2rem;
   height: 3.8rem;
 }
@@ -46,8 +46,10 @@
   }
 }
 
-@media (max-width: 576px) {
-  .NavBar {
-    text-align: end;
+@media (max-width: 769px) {
+  .ContainerNavegar {
+    margin-top: 0.2em;
+    margin-right: 0.2em;
+    justify-content: flex-end;
   }
 }
