@@ -33,7 +33,7 @@ class Contato extends Component {
       disabled: true
     });
 
-    Axios.post("danielvalente.herokuapp.com/api/email", this.state)
+    Axios.post("/api/email", this.state)
       .then(res => {
         if (res.data.success) {
           this.setState({
