@@ -1,6 +1,4 @@
 import React from "react";
-import { HashRouter as Router } from "react-router-dom";
-import { NavHashLink as NavLink } from "react-router-hash-link";
 import { useSpring, config } from "react-spring";
 
 import Menu from "./Menu";
@@ -26,17 +24,11 @@ const Navegar = props => {
       <div className="NavBar" style={barAnimation}>
         <div className="ContainerNavegar">
           <div className="NavLinks" style={linkAnimation}>
-            <Router>
-              <NavLink smooth to="/">
-                Inicio
-              </NavLink>
-              <NavLink smooth to="/projetos">
-                Projetos
-              </NavLink>
-              <NavLink smooth to="/contato">
-                Contato
-              </NavLink>
-            </Router>
+            <a href="/" exact>
+              Inicio
+            </a>
+            <a href="/projetos">Projetos</a>
+            <a href="/contato">Contato</a>
           </div>
           <div className="Wrapper">
             <Menu
