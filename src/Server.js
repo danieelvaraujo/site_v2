@@ -20,16 +20,16 @@ app.use((req, res, next) => {
   next();
 });
 
-app.get("/api", (req, res, next) => {
+app.get("/api", (req, res) => {
   res.send("API status: Funcionando");
 });
 
-app.post("/api/email", (req, res, next) => {
+app.post("/api/email", (req, res) => {
   const msg = {
     service: "Gmail",
     auth: {
-      user: "dvcodeacao@gmail.com", // generated ethereal user
-      pass: "Teupaibebo1!" // generated ethereal password
+      user: "dvcodeacao@gmail.com", // Usuario api
+      pass: "Teupaibebo1!" // Senha api
     }
   };
 
@@ -61,8 +61,4 @@ app.post("/api/email", (req, res, next) => {
     });
 });
 
-let port = process.env.PORT;
-if (port == null || port == "") {
-  port = 8000;
-}
-app.listen(port);
+app.listen(process.env.PORT);
