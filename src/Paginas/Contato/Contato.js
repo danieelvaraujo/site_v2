@@ -33,7 +33,7 @@ class Contato extends Component {
       disabled: true
     });
 
-    Axios.post("/api/email", this.state)
+    Axios.post("http://danielvalente.herokuapp.com/api/email", this.state)
       .then(res => {
         if (res.data.success) {
           this.setState({
@@ -102,9 +102,7 @@ class Contato extends Component {
             type="submit"
             value="Enviar!"
             disabled={this.state.disabled}
-          >
-            {console.log(this.handleSubmit)}
-          </input>
+          />
 
           {this.state.emailSent === true && (
             <p className="Sucesso">Email enviado.</p>
