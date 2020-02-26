@@ -37,10 +37,10 @@ app.post("/api/email", (req, res, next) => {
 
   transporter
     .sendMail({
-      from: req.body.email, // sender address
-      to: "danieelvaraujo@gmail.com", // list of receivers
-      subject: req.body.assunto, // Subject line
-      text: req.body.message, // plain text body
+      from: req.body.email, // Email de quem enviou
+      to: "danieelvaraujo@gmail.com", // Quem está recebendo
+      subject: req.body.assunto, // Assunto da mensagem
+      text: req.body.message, // Mensagem
       html: `
             <h1>Recebido email de: ${req.body.name}</h1>
             <p>Email para contato: ${req.body.email}</p>
@@ -61,8 +61,4 @@ app.post("/api/email", (req, res, next) => {
     });
 });
 
-let port = process.env.PORT;
-if (port == null || port == "") {
-  port = 8000;
-}
-app.listen(port);
+app.listen(3010, "localhost");
