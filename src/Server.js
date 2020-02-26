@@ -20,11 +20,11 @@ app.use((req, res, next) => {
   next();
 });
 
-app.get("https://danielvalente.herokuapp.com/api", (req, res, next) => {
+app.get("/api", (req, res, next) => {
   res.send("API status: Funcionando");
 });
 
-app.post("https://danielvalente.herokuapp.com/api/email", (req, res, next) => {
+app.post("/api/email", (req, res, next) => {
   const msg = {
     service: "Gmail",
     auth: {
