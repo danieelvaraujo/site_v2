@@ -33,7 +33,7 @@ class Contato extends Component {
       disabled: true
     });
 
-    Axios.post("/api/email", this.state)
+    Axios.post(REACT_APP_API_URL + "/api/email", this.state)
       .then(res => {
         if (res.data.success) {
           this.setState({
