@@ -50,11 +50,11 @@ app.post("/api/email", (req, res, next) => {
       });
     })
     .catch(err => {
-      console.log("error: ", err);
+      console.log("Deu o seguinte erro: ", err);
       res.status(401).json({
         success: false
       });
     });
 });
 
-app.listen(3010, "0.0.0.0");
+app.listen(process.env.PORT);
