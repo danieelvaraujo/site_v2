@@ -18,7 +18,7 @@
     "react-scripts": "3.4.0",
     "react-spring": "^8.0.27",
     "react-transition-group": "^4.3.0",
-    "sendgrid": "^4.2.0",
+    "@sendgrid/mail": "^6.4.0",
     "styled-components": "^5.0.1"
   },
   "scripts": {

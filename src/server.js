@@ -2,54 +2,59 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 
-var sg = require("sendgrid")(process.env.SENDGRID_API_KEY);
-var request = sg.emptyRequest({
-  method: "POST",
-  path: "/api/email",
-  body: {
-    personalizations: [
-      {
-        to: [
-          {
-            email: "danieelvaraujo@gmail.com"
-          }
-        ],
-        subject: req.body.assunto
-      }
-    ],
-    from: {
-      email: req.body.email
-    },
-    content: [
-      {
-        type: "text/plain",
-        value: req.body.message
-      }
-    ]
-  }
+const sendGrid = require("@sendGrid/mail");
+
+const app = express();
+
+app.use(bodyParser.json());
+
+app.use(cors());
+
+app.use((req, res, next) => {
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  res.setHeader(
+    "Access-Control-Allow-Methods",
+    "GET, POST, PUT, PATCH, DELETE"
+  );
+  res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization");
+  next();
 });
 
-//With promise
-sg.API(request)
-  .then(response => {
-    console.log(response.statusCode);
-    console.log(response.body);
-    console.log(response.headers);
-  })
-  .catch(error => {
-    //error is an instance of SendGridError
-    //The full response is attached to error.response
-    console.log(error.response.statusCode);
-  });
-
-//With callback
-sg.API(request, function(error, response) {
-  if (error) {
-    console.log("Error response received");
-  }
-  console.log(response.statusCode);
-  console.log(response.body);
-  console.log(response.headers);
+app.get("/api", (req, res, next) => {
+  res.send("API status: Funcionando");
 });
 
-app.listen(process.env.PORT);
+app.post("/api/email", (req, res, next) => {
+  sendGrid.setApiKey(
+    "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"
+  );
+
+  const msg = {
+    to: "danieelvaraujo@gmail.com",
+    from: req.body.email,
+    subject: req.body.assunto,
+    text: req.body.message,
+    html: `
+            <h1>Recebido email de: ${req.body.name}</h1>
+            <p>Email para contato: ${req.body.email}</p>
+            <h3>Assunto do email: ${req.body.assunto}</h3>
+            <p>${req.body.message}</p>
+            `
+  };
+
+  sendGrid
+    .send(msg)
+    .then(result => {
+      res.status(200).json({
+        success: true
+      });
+    })
+    .catch(err => {
+      console.log("error: ", err);
+      res.status(401).json({
+        success: false
+      });
+    });
+});
+
+app.listen(3010, "0.0.0.0");
