@@ -33,7 +33,7 @@ class Contato extends Component {
       disabled: true
     });
 
-    Axios.post("https://danielvalente-api.herokuapp.com//api/email", this.state)
+    Axios.post("https://danielvalente-api.herokuapp.com/api/email", this.state)
       .then(res => {
         if (res.data.success) {
           this.setState({
@@ -61,7 +61,7 @@ class Contato extends Component {
         <h3>Entre em contato:</h3>
         <form
           method="POST"
-          action="https://danielvalente-api.herokuapp.com//api/email"
+          action="https://danielvalente-api.herokuapp.com/api/email"
           onSubmit={this.handleSubmit}
         >
           <input
