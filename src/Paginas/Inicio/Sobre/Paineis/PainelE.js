@@ -36,7 +36,7 @@ function PainelE(props) {
       <div className="Sociais">
         {/*Redes sociais*/}
         <a
-          href="https://www.linkedin.com/in/daniel-valente-0221471a0/"
+          href="https://github.com/danieelvaraujo"
           target="_blank"
           className="Github"
           rel="noopener noreferrer"
@@ -46,7 +46,7 @@ function PainelE(props) {
           </button>
         </a>
         <a
-          href="https://github.com/danieelvaraujo"
+          href="https://www.linkedin.com/in/daniel-valente-0221471a0/"
           target="_blank"
           className="Linkedin"
           rel="noopener noreferrer"
