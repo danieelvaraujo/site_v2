@@ -33,7 +33,7 @@ class Contato extends Component {
       disabled: true
     });
 
-    Axios.post("/api/email", this.state)
+    Axios.post("http://localhost:3010/api/email", this.state)
       .then(res => {
         if (res.data.success) {
           this.setState({
@@ -59,12 +59,7 @@ class Contato extends Component {
     return (
       <div className="ContainerContato">
         <h3>Entre em contato:</h3>
-        <form
-          className="topBefore"
-          method="POST"
-          action="/api/email"
-          onSubmit={this.handleSubmit}
-        >
+        <form method="POST" action="/api/email" onSubmit={this.handleSubmit}>
           <input
             type="text"
             name="name"
