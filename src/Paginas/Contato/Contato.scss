@@ -195,6 +195,10 @@ textarea:hover::focus:-ms-placeholder {
 }
 
 @media (max-width: 320px) {
+  form {
+    position: absolute;
+    margin: -1em 0 1em 1.5em;
+  }
   textarea {
     height: 30vh;
     width: 70vw;
