@@ -44,6 +44,7 @@ li {
 
 .Sociais {
   margin-top: 0.4em;
+  margin-bottom: 0.4em;
 }
 
 .Linkedin {
@@ -137,6 +138,9 @@ li {
 }
 
 @media (max-width: 568px) {
+  .LdEsqrd {
+    border-right: 0;
+  }
   .LdDrt {
     p {
       font-size: 0.8em;
