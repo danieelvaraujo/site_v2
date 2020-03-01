@@ -204,6 +204,7 @@ textarea:hover::focus:-ms-placeholder {
     width: 70vw;
     &:focus {
       height: 30vh;
+      margin-bottom: 2em;
     }
   }
 }
