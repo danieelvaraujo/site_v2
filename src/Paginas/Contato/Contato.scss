@@ -37,11 +37,11 @@ input {
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
-}
 
-input:hover {
-  background: #b3aca7;
-  color: #e2dedb;
+  &:hover {
+    background: #b3aca7;
+    color: #e2dedb;
+  }
 }
 
 textarea {
@@ -60,7 +60,7 @@ textarea {
   -ms-transition: all 0.3s ease-in-out;
 
   &:focus {
-    height: 30vh;
+    height: 250px;
   }
 
   &:hover {
@@ -102,7 +102,7 @@ textarea::-webkit-input-placeholder {
 
 input:focus::-webkit-input-placeholder,
 textarea:focus::-webkit-input-placeholder {
-  color: #bbb5af;
+  color: black;
 }
 
 input::-moz-placeholder,
@@ -113,7 +113,7 @@ textarea::-moz-placeholder {
 
 input:focus::-moz-placeholder,
 textarea:focus::-moz-placeholder {
-  color: #cbc6c1;
+  color: black;
 }
 
 input::placeholder,
@@ -192,5 +192,9 @@ textarea:hover::focus:-ms-placeholder {
     form {
       width: 90vw;
     }
+  }
+
+  textarea {
+    height: 250px;
   }
 }
