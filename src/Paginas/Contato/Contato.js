@@ -68,6 +68,7 @@ class Contato extends Component {
             type="text"
             name="name"
             placeholder="Seu nome "
+            required
             value={this.state.name}
             onChange={this.handleChange}
           />
@@ -75,6 +76,7 @@ class Contato extends Component {
           <input
             type="text"
             name="email"
+            required
             placeholder="Seu email "
             value={this.state.email}
             onChange={this.handleChange}
@@ -83,6 +85,7 @@ class Contato extends Component {
           <input
             type="text"
             name="assunto"
+            required
             placeholder="Assunto "
             value={this.state.assunto}
             onChange={this.handleChange}
@@ -91,6 +94,7 @@ class Contato extends Component {
           <textarea
             name="message"
             placeholder="Deixe sua mensagem. "
+            required
             value={this.state.message}
             onChange={this.handleChange}
           ></textarea>

@@ -194,11 +194,8 @@ textarea:hover::focus:-ms-placeholder {
 }
 
 @media (max-width: 320px) {
-  .ContainerContato {
-    width: 80%;
-  }
   textarea {
-    height: 2em;
+    height: 30vh;
     width: 70vw;
   }
 }
