@@ -12,7 +12,7 @@ const Cartao = ({ informacao }) => {
         <p className="Titulo">{titulo}</p>
         <p className="Subtitulo">{subTitulo}</p>
         <div className="Links">
-          <a href={linkGit} className="LinkGit">
+          <a href={linkGit} className="LinkGit" target="_blank">
             <button>
               <p>Github</p>
               <i className="fa fa-github-square" />

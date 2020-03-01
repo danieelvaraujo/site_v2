@@ -1,4 +1,8 @@
+a {
+  display: block;
+}
 .NavBar {
+  z-index: 9999;
   position: sticky;
   margin: auto;
   width: 100vw;
