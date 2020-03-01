@@ -89,7 +89,6 @@ class Contato extends Component {
           />
 
           <textarea
-            rows="4"
             name="message"
             placeholder="Deixe sua mensagem. "
             value={this.state.message}
