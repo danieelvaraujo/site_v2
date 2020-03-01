@@ -38,6 +38,9 @@
     opacity: 1;
     background-color: rgba(195, 196, 199, 0.2);
   }
+  &:disabled {
+    opacity: 0;
+  }
 }
 
 .Coluna {
@@ -114,5 +117,11 @@
     &:after {
       height: 50vh;
     }
+  }
+}
+
+@media (max-width: 320px) {
+  .Seta {
+    font-size: 1.3em;
   }
 }

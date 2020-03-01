@@ -81,3 +81,35 @@
     }
   }
 }
+
+@media (max-width: 320px) {
+  .Heroi {
+    .Titulo {
+      font-size: 4em;
+    }
+    .TituloPisca {
+      font-size: 1.5em;
+    }
+    .Subtitulo {
+      margin-left: 1.5em;
+    }
+  }
+
+  @keyframes animated-text {
+    0% {
+      width: 0;
+    }
+    10% {
+      width: 270px;
+    }
+
+    95% {
+      width: 270px;
+    }
+
+    100% {
+      width: 270px;
+      display: none;
+    }
+  }
+}

@@ -47,3 +47,20 @@
     padding: 1em 0 1em 0;
   }
 }
+
+@media (max-width: 320px) {
+  .PainelE {
+    padding: 0.3em;
+    width: 90vw;
+  }
+
+  .PainelD {
+    padding: 0.3em;
+    margin: 0;
+    width: 90vw;
+
+    ul {
+      padding-left: 1.5em;
+    }
+  }
+}

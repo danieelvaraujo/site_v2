@@ -45,6 +45,7 @@ input {
 
 textarea {
   width: 100%;
+  height: 15vh;
   padding: 15px;
   background: transparent;
   outline: none;
@@ -58,7 +59,7 @@ textarea {
   -ms-transition: all 0.3s ease-in-out;
 
   &:focus {
-    height: 50vh;
+    height: 35vh;
   }
 
   &:hover {
@@ -197,5 +198,8 @@ textarea:hover::focus:-ms-placeholder {
   textarea {
     height: 30vh;
     width: 70vw;
+    &:focus {
+      height: 30vh;
+    }
   }
 }
