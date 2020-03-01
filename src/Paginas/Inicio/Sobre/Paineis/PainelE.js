@@ -1,6 +1,6 @@
 import React from "react";
 
-import avatar from "../../../../Espolios/avatar-resize.jpg";
+import avatar from "../../../../Espolios/avatar-resize.jpeg";
 import "./Paineis.scss";
 
 function PainelE(props) {
