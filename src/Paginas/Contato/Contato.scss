@@ -45,7 +45,6 @@ input {
 
 textarea {
   width: 100%;
-  height: 110px;
   padding: 15px;
   background: transparent;
   outline: none;
@@ -59,7 +58,7 @@ textarea {
   -ms-transition: all 0.3s ease-in-out;
 
   &:focus {
-    height: 250px;
+    height: 50vh;
   }
 
   &:hover {
@@ -189,11 +188,17 @@ textarea:hover::focus:-ms-placeholder {
       margin-left: 0.5em;
     }
     form {
-      width: 90vw;
+      width: 70vw;
     }
   }
+}
 
+@media (max-width: 320px) {
+  .ContainerContato {
+    width: 80%;
+  }
   textarea {
-    height: 250px;
+    height: 2em;
+    width: 70vw;
   }
 }
