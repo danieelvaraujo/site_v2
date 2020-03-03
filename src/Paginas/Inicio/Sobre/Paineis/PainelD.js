@@ -32,6 +32,7 @@ function PainelD(props) {
         <h2>Conhecimentos:</h2>
         <ul>
           <li>PHP</li>
+          <li>React.Native</li>
           <li>React.Hooks</li>
           <li>mySQL</li>
         </ul>
