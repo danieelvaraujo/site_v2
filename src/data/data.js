@@ -10,7 +10,7 @@ const data = {
       subTitulo: "Advogada atuando em Natal e Macaíba/RN",
       foto: tvadvg,
       alter: "A imagem não carregou corretamente",
-      linkLive: "about:blank",
+      linkLive: "https://teresinha-advogada.herokuapp.com/",
       linkGit: "https://github.com/danieelvaraujo/teresinha_advogada"
     },
     {

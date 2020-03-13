@@ -4,7 +4,15 @@ import PropTypes from "prop-types";
 import "./Cartao.scss";
 
 const Cartao = ({ informacao }) => {
-  const { index, titulo, subTitulo, alter, foto, linkGit } = informacao;
+  const {
+    index,
+    titulo,
+    subTitulo,
+    alter,
+    foto,
+    linkLive,
+    linkGit
+  } = informacao;
   return (
     <div id={`Carta${index}`} className="Cartao">
       <img src={foto} alt={alter} />
@@ -16,6 +24,12 @@ const Cartao = ({ informacao }) => {
             <button>
               <p>Github</p>
               <i className="fa fa-github-square" />
+            </button>
+          </a>
+          <a href={linkLive} className="LinkLive" target="_blank">
+            <button>
+              <p>Live</p>
+              <i className="fa fa-internet-explorer" />
             </button>
           </a>
         </div>
