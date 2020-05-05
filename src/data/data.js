@@ -27,7 +27,7 @@ const data = {
     {
       _id: "pokedex",
       index: 2,
-      titulo: "Pokepedia",
+      titulo: "Poképedia",
       subTitulo: "App de informações sobre os Pokemons",
       foto: pokedex,
       alter: "A imagem não carregou corretamente",
