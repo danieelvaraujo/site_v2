@@ -1,5 +1,6 @@
 import tvadvg from "../Espolios/tvadvg.jpg";
 import reactburger from "../Espolios/burger.jpg";
+import pokedex from "../Espolios/pokedex.jpg";
 
 const data = {
   informacoes: [
@@ -11,7 +12,7 @@ const data = {
       foto: tvadvg,
       alter: "A imagem não carregou corretamente",
       linkLive: "https://teresinha-advogada.herokuapp.com/",
-      linkGit: "https://github.com/danieelvaraujo/teresinha_advogada"
+      linkGit: "https://github.com/danieelvaraujo/teresinha_advogada",
     },
     {
       _id: "rctmybrgr",
@@ -21,9 +22,19 @@ const data = {
       foto: reactburger,
       alter: "A imagem não carregou corretamente",
       linkLive: "about:blank",
-      linkGit: "https://github.com/danieelvaraujo/burger-builder"
-    }
-  ]
+      linkGit: "https://github.com/danieelvaraujo/burger-builder",
+    },
+    {
+      _id: "pokedex",
+      index: 2,
+      titulo: "Pokepedia",
+      subTitulo: "App de informações sobre os Pokemons",
+      foto: pokedex,
+      alter: "A imagem não carregou corretamente",
+      linkLive: "https://pokedexson.herokuapp.com/",
+      linkGit: "https://github.com/danieelvaraujo/pokedexson",
+    },
+  ],
 };
 
 export default data;
