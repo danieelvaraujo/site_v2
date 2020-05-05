@@ -16,25 +16,25 @@ function PainelD(props) {
           <li>CSS3 / SASS</li>
           <li>Boostrap</li>
           <li>React.JS:</li>
-          <ul>
-            <li>Router</li>
-            <li>MDL</li>
-            <li>Spring</li>
-          </ul>
+          <li>React.Hooks</li>
+          <li>Router</li>
           <li>Redux</li>
-          <li>Node.JS</li>
           <li>Axios</li>
-          <li>Firebase</li>
+          <li>Node.JS</li>
+          <li>Express</li>
+          <li>MongoDB</li>
         </ul>
       </div>
 
       <div className="Sab">
         <h2>Conhecimentos:</h2>
         <ul>
+          <li>Javascript</li>
           <li>PHP</li>
           <li>React.Native</li>
-          <li>React.Hooks</li>
+          <li>Firebase</li>
           <li>mySQL</li>
+          <li>Photoshop</li>
         </ul>
       </div>
     </div>
