@@ -37,6 +37,7 @@ li {
 .DvEsqrd {
   img {
     height: auto;
+    border-radius: 0.3em;
     width: 14em;
     border: 1px solid rgb(238, 240, 125);
   }
@@ -116,6 +117,7 @@ li {
   display: inline-block;
   text-align: left;
   color: white;
+  justify-content: space-evenly;
 
   h2 {
     font-family: "Spectral SC", serif;
@@ -127,6 +129,8 @@ li {
   text-align: left;
   line-height: 24px;
   padding: 0.6em;
+  padding-right: 3em;
+  border-right: 2px solid black;
 }
 
 .Sab {
@@ -135,6 +139,7 @@ li {
   margin-left: auto;
   vertical-align: top;
   padding: 0.6em;
+  padding-left: 3em;
 }
 
 @media (max-width: 568px) {
