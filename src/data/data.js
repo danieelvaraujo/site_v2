@@ -1,5 +1,5 @@
 import tvadvg from "../Espolios/tvadvg.jpg";
-import reactburger from "../Espolios/burger.jpg";
+import coordenapp from "../Espolios/coordenapp.jpg";
 import pokedex from "../Espolios/pokedex.jpg";
 
 const data = {
@@ -15,14 +15,16 @@ const data = {
       linkGit: "https://github.com/danieelvaraujo/teresinha_advogada",
     },
     {
-      _id: "rctmybrgr",
+      _id: "coordenapp",
       index: 1,
-      titulo: "React My Burger",
-      subTitulo: "App para montagem de sanduiches",
-      foto: reactburger,
+      titulo: "Coordenapp",
+      subTitulo:
+        "App que salva a geolocalização da foto e as exibe automaticamente",
+      foto: coordenapp,
       alter: "A imagem não carregou corretamente",
-      linkLive: "about:blank",
-      linkGit: "https://github.com/danieelvaraujo/burger-builder",
+      linkLive:
+        "https://expo.io/artifacts/aa468288-c78c-4f9f-bafa-ddd0dd86ebfc",
+      linkGit: "https://github.com/danieelvaraujo/reactnative-desafio",
     },
     {
       _id: "pokedex",
