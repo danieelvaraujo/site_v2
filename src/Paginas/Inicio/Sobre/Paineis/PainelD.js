@@ -16,8 +16,7 @@ function PainelD(props) {
           <li>CSS3 / SASS</li>
           <li>Boostrap</li>
           <li>React.JS:</li>
-          <li>React.Hooks</li>
-          <li>Router</li>
+          <li>React.Native</li>
           <li>Redux</li>
           <li>Axios</li>
           <li>Node.JS</li>
@@ -31,7 +30,6 @@ function PainelD(props) {
         <ul>
           <li>Javascript</li>
           <li>PHP</li>
-          <li>React.Native</li>
           <li>Firebase</li>
           <li>mySQL</li>
           <li>Photoshop</li>
