@@ -1,6 +1,7 @@
 import tvadvg from "../Espolios/tvadvg.jpg";
 import coordenapp from "../Espolios/coordenapp.jpg";
 import pokedex from "../Espolios/pokedex.jpg";
+import doto from "../Espolios/doto.jpg";
 
 const data = {
   informacoes: [
@@ -35,6 +36,16 @@ const data = {
       alter: "A imagem não carregou corretamente",
       linkLive: "https://pokedexson.herokuapp.com/",
       linkGit: "https://github.com/danieelvaraujo/pokedexson",
+    },
+    {
+      _id: "dotapp",
+      index: 3,
+      titulo: "DotApp",
+      subTitulo: "App de heróis do doto",
+      foto: doto,
+      alter: "A imagem não carregou corretamente",
+      linkLive: "#",
+      linkGit: "https://github.com/danieelvaraujo/dotapp",
     },
   ],
 };
