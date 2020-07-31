@@ -15,10 +15,9 @@ function PainelD(props) {
           <li>HTML5</li>
           <li>CSS3 / SASS</li>
           <li>Boostrap</li>
-          <li>React.JS:</li>
+          <li>React.JS</li>
           <li>React.Native</li>
           <li>Redux</li>
-          <li>Axios</li>
           <li>Node.JS</li>
           <li>Express</li>
           <li>MongoDB</li>
@@ -28,8 +27,7 @@ function PainelD(props) {
       <div className="Sab">
         <h2>Conhecimentos:</h2>
         <ul>
-          <li>Javascript</li>
-          <li>PHP</li>
+          <li>Laravel</li>
           <li>Firebase</li>
           <li>mySQL</li>
           <li>Photoshop</li>
