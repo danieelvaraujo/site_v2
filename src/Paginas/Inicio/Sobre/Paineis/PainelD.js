@@ -12,25 +12,27 @@ function PainelD(props) {
       <div className="Exp">
         <h2>Experiência:</h2>
         <ul>
-          <li>HTML5</li>
-          <li>CSS3 / SASS</li>
-          <li>Boostrap</li>
+          <li>HTML/CSS</li>
           <li>React.JS</li>
-          <li>React.Native</li>
+          <li>React Native</li>
+          <li>Vue JS</li>
+          <li>Node JS</li>
+          <li>Adonis JS</li>          
+          <li>Laravel</li>
           <li>Redux</li>
-          <li>Node.JS</li>
           <li>Express</li>
           <li>MongoDB</li>
+          <li>PostgreSQL</li>
         </ul>
       </div>
 
       <div className="Sab">
         <h2>Conhecimentos:</h2>
         <ul>
-          <li>Laravel</li>
-          <li>Firebase</li>
-          <li>mySQL</li>
-          <li>Photoshop</li>
+          <li>Javascript</li>
+          <li>PHP</li>
+          <li>SQL</li>
+          <li>Bot para Telegram/Whatsapp</li>
         </ul>
       </div>
     </div>
