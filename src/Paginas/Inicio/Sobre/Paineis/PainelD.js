@@ -32,7 +32,10 @@ function PainelD(props) {
           <li>Javascript</li>
           <li>PHP</li>
           <li>SQL</li>
+          <li>Docker</li>
           <li>Bot para Telegram/Whatsapp</li>
+          <li>Inglês fluente</li>
+          <li>Francês avançado</li>
         </ul>
       </div>
     </div>
