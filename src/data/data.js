@@ -1,4 +1,4 @@
-import tvadvg from "../Espolios/tvadvg.jpg";
+import earthly from "../Espolios/earthly.jpg";
 import coordenapp from "../Espolios/coordenapp.jpg";
 import pokedex from "../Espolios/pokedex.jpg";
 import doto from "../Espolios/doto.jpg";
@@ -6,14 +6,14 @@ import doto from "../Espolios/doto.jpg";
 const data = {
   informacoes: [
     {
-      _id: "tvadvg",
+      _id: "earthlyapi",
       index: 0,
-      titulo: "Teresinha Valente Advogada",
-      subTitulo: "Advogada atuando em Natal e Macaíba/RN",
-      foto: tvadvg,
+      titulo: "Earthly API",
+      subTitulo: "Pesquise sobre um país que deseja conhecer.",
+      foto: earthly,
       alter: "A imagem não carregou corretamente",
-      linkLive: "https://teresinha-advogada.herokuapp.com/",
-      linkGit: "https://github.com/danieelvaraujo/teresinha_advogada",
+      linkLive: "https://meta-desafio.herokuapp.com/",
+      linkGit: "https://github.com/danieelvaraujo/meta-desafio",
     },
     {
       _id: "coordenapp",
